@@ -1,0 +1,39 @@
+{
+    "cpp":[
+         {
+            "prefix": "qxx",
+            "scope":"cpp",
+            "body": [
+                "struct node",
+                "{",
+                "\tll to, next, w;",
+                "\tnode() {}",
+                "\tnode(ll w, ll to) : to(to), next(0), w(w) {}",
+                "\tfriend bool operator<(node a, node b)",
+                "\t{",
+                "\t\treturn a.w > b.w;",
+                "\t}",
+                "};",
+                "ll nxt, rnxt;",
+                "node e[maxn * 2];",
+                "ll h[N];",
+                "bool vis[N];",
+                "ll dis[N];",
+                "void add(ll u,ll v,ll w = 0){",
+                "\te[++nxt].next=h[u];",
+                "\te[nxt].w=w;",
+                "\te[nxt].to=v;",
+                "\th[u] = nxt;",
+                "}",
+                "void init(){",
+                "\tnxt=1;",
+                "\tfor (int i = 0; i <= n; i++)//网络流使用2*n+7",
+                "\t{",
+                "\t\th[i] = -1;",
+                "\t}",
+                "}"
+            ],
+            "description": "链式前向星"
+        }
+    ]
+}
