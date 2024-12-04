@@ -1,4 +1,6 @@
 # 💤 LazyVim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+Using neovide is even better @u@
+
+Recommend to do ":LazyExtras "
+
